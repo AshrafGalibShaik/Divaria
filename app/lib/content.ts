@@ -263,6 +263,15 @@ export const collections: Collection[] = [
   },
 ];
 
+/** Enquiry categories, tied to a collection so lead times can be quoted live. */
+export const enquiryOptions = [
+  { label: "Bridal couture", slug: "bridal" },
+  { label: "Pret", slug: "pret" },
+  { label: "Indo-Western menswear", slug: "menswear" },
+  { label: "Customised designer wear", slug: "bespoke" },
+  { label: "Trousseau or family edit", slug: "bridal" },
+];
+
 export const journey = [
   {
     step: "01",
