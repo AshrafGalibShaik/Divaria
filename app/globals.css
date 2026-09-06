@@ -80,18 +80,15 @@ body {
   }
 }
 
-@keyframes menu-in {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: none; }
-}
-
-.menu-in {
-  animation: menu-in 0.38s cubic-bezier(0.2, 0.7, 0.2, 1) both;
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .rise,
-  .menu-in {
+  .rise {
     animation: none;
+  }
+
+  /* The menu animates with transitions, so cutting duration is what stops it. */
+  #site-menu,
+  #site-menu * {
+    transition-duration: 1ms !important;
+    transition-delay: 0ms !important;
   }
 }
