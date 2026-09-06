@@ -25,8 +25,8 @@ export function SiteHeader() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const hasHero = pathname === "/" || pathname.startsWith("/collections/");
-  const overHero = hasHero && !scrolled && !open;
+  // Only the home page puts the header over a dark full-bleed hero.
+  const overHero = pathname === "/" && !scrolled && !open;
 
   return (
     <header

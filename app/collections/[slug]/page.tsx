@@ -31,26 +31,17 @@ export default async function CollectionPage({
 
   return (
     <>
-      <section className="relative flex h-[62svh] min-h-[420px] items-end overflow-hidden">
-        <Plate
-          src={collection.cover}
-          alt={collection.name}
-          priority
-          dark
-          sizes="100vw"
-          position="50% 15%"
-          className="absolute! inset-0"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink/70 to-ink/10" />
-        <div className="relative mx-auto w-full max-w-[1600px] px-6 pb-14 text-paper lg:px-12">
-          <p className="label text-paper/70">{collection.eyebrow}</p>
-          <h1 className="mt-4 max-w-3xl font-display text-5xl font-light leading-[1.05] sm:text-6xl lg:text-7xl">
-            {collection.name}
-          </h1>
-        </div>
+      {/* Typographic header, matching the atelier and appointment pages. Every
+          photograph in the archive is 4:5, so a full-width band could only ever
+          crop one to a headless letterbox; the grid below shows them whole. */}
+      <section className="mx-auto max-w-[1600px] px-6 pt-36 lg:px-12 lg:pt-44">
+        <p className="label text-muted">{collection.eyebrow}</p>
+        <h1 className="mt-5 max-w-3xl font-display text-5xl font-light leading-[1.05] sm:text-6xl lg:text-7xl">
+          {collection.name}
+        </h1>
       </section>
 
-      <section className="mx-auto max-w-[1600px] px-6 pt-16 lg:px-12 lg:pt-20">
+      <section className="mx-auto max-w-[1600px] px-6 pt-12 lg:px-12 lg:pt-16">
         <div className="reveal-group grid gap-10 border-t border-line pt-10 lg:grid-cols-12">
           <p className="max-w-2xl leading-relaxed text-muted lg:col-span-7 lg:text-lg">
             {collection.intro}
@@ -71,6 +62,7 @@ export default async function CollectionPage({
               <Plate
                 src={p.src}
                 alt={p.alt}
+                priority={i === 0}
                 sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                 className={i % 3 === 1 ? "aspect-square" : "aspect-3/4"}
               />
@@ -144,7 +136,7 @@ export default async function CollectionPage({
                   src={c.cover}
                   alt={c.name}
                   sizes="(min-width: 640px) 33vw, 100vw"
-                  className="aspect-16/10 transition-transform duration-[1.2s] ease-out group-hover:scale-[1.04]"
+                  className="aspect-3/4 transition-transform duration-[1.2s] ease-out group-hover:scale-[1.04]"
                 />
               </div>
               <h3 className="mt-4 font-display text-2xl">{c.name}</h3>
