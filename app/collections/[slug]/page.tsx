@@ -51,7 +51,7 @@ export default async function CollectionPage({
       </section>
 
       <section className="mx-auto max-w-[1600px] px-6 pt-16 lg:px-12 lg:pt-20">
-        <div className="grid gap-10 border-t border-line pt-10 lg:grid-cols-12">
+        <div className="reveal-group grid gap-10 border-t border-line pt-10 lg:grid-cols-12">
           <p className="max-w-2xl leading-relaxed text-muted lg:col-span-7 lg:text-lg">
             {collection.intro}
           </p>
@@ -65,7 +65,7 @@ export default async function CollectionPage({
       </section>
 
       <section className="mx-auto max-w-[1600px] px-6 py-20 lg:px-12 lg:py-28">
-        <div className="grid gap-x-6 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="reveal-group grid gap-x-6 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
           {collection.pieces.map((p, i) => (
             <figure key={p.name}>
               <Plate
@@ -89,7 +89,7 @@ export default async function CollectionPage({
 
       {collection.feature && (
         <section className="border-y border-line">
-          <div className="mx-auto grid max-w-[1600px] items-center gap-14 px-6 py-20 lg:grid-cols-2 lg:px-12">
+          <div className="reveal-group mx-auto grid max-w-[1600px] items-center gap-14 px-6 py-20 lg:grid-cols-2 lg:px-12">
             {collection.feature.reel ? (
               <div className="plate aspect-4/5 overflow-hidden">
                 <Reel
@@ -136,7 +136,7 @@ export default async function CollectionPage({
 
       <section className="mx-auto max-w-[1600px] px-6 py-20 lg:px-12">
         <h2 className="label text-muted">Also from the house</h2>
-        <div className="mt-8 grid gap-x-6 gap-y-10 sm:grid-cols-3">
+        <div className="reveal-group mt-8 grid gap-x-6 gap-y-10 sm:grid-cols-3">
           {others.map((c) => (
             <Link key={c.slug} href={`/collections/${c.slug}`} className="group block">
               <div className="overflow-hidden">

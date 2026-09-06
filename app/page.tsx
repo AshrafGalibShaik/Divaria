@@ -49,8 +49,8 @@ export default function Home() {
       {/* Statement */}
       <section className="mx-auto max-w-[1600px] px-6 py-24 lg:px-12 lg:py-36">
         <div className="grid gap-12 lg:grid-cols-12">
-          <p className="label text-muted lg:col-span-3">The house</p>
-          <div className="lg:col-span-9">
+          <p className="label reveal text-muted lg:col-span-3">The house</p>
+          <div className="reveal lg:col-span-9">
             <p className="max-w-4xl font-display text-3xl font-light leading-[1.3] sm:text-4xl lg:text-[2.75rem]">
               {story.manifesto}
             </p>
@@ -79,7 +79,7 @@ export default function Home() {
             <h2 className="font-display text-4xl font-light lg:text-5xl">Collections</h2>
             <p className="label hidden text-muted sm:block">Made to order</p>
           </div>
-          <div className="grid gap-x-6 gap-y-14 pb-24 sm:grid-cols-2 lg:grid-cols-4 lg:pb-32">
+          <div className="reveal-group grid gap-x-6 gap-y-14 pb-24 sm:grid-cols-2 lg:grid-cols-4 lg:pb-32">
             {collections.map((c) => (
               <Link key={c.slug} href={`/collections/${c.slug}`} className="group block">
                 <div className="overflow-hidden">
@@ -103,7 +103,7 @@ export default function Home() {
       </section>
 
       {/* Heritage */}
-      <section className="relative overflow-hidden border-t border-line">
+      <section className="relative border-t border-line">
         <Plate
           src={art.texture}
           alt=""
@@ -111,7 +111,7 @@ export default function Home() {
           position="50% 40%"
           className="absolute! inset-0"
         />
-        <div className="relative mx-auto max-w-[1600px] px-6 py-28 text-center lg:px-12 lg:py-36">
+        <div className="reveal relative mx-auto max-w-[1600px] px-6 py-28 text-center lg:px-12 lg:py-36">
           <p className="mx-auto max-w-3xl font-display text-3xl font-light leading-snug text-ink/85 sm:text-4xl lg:text-5xl">
             {story.tagline}
           </p>
@@ -121,7 +121,7 @@ export default function Home() {
 
       {/* Worldwide */}
       <section className="bg-ink text-ivory">
-        <div className="mx-auto grid max-w-[1600px] items-center gap-14 px-6 py-24 lg:grid-cols-2 lg:px-12 lg:py-32">
+        <div className="reveal-group mx-auto grid max-w-[1600px] items-center gap-14 px-6 py-24 lg:grid-cols-2 lg:px-12 lg:py-32">
           <div>
             <p className="label text-ivory/50">Guntur to anywhere</p>
             <h2 className="mt-6 font-display text-4xl font-light leading-tight sm:text-5xl lg:text-6xl">
@@ -157,7 +157,7 @@ export default function Home() {
 
       {/* Press */}
       <section className="mx-auto max-w-[1600px] px-6 py-24 lg:px-12 lg:py-32">
-        <div className="grid items-center gap-14 lg:grid-cols-12">
+        <div className="reveal-group grid items-center gap-14 lg:grid-cols-12">
           <Plate
             src={press.cover}
             alt={press.alt}
@@ -193,7 +193,7 @@ export default function Home() {
             </h2>
             <p className="label text-muted">Filmed in the workroom</p>
           </div>
-          <div className="mt-12 grid gap-6 sm:grid-cols-3">
+          <div className="reveal-group mt-12 grid gap-6 sm:grid-cols-3">
             {film.making.map((clip) => (
               <figure key={clip.name}>
                 <div className="plate aspect-9/16 overflow-hidden">
@@ -212,7 +212,7 @@ export default function Home() {
           <h2 className="font-display text-4xl font-light lg:text-5xl">
             From first call to final fitting
           </h2>
-          <ol className="mt-14 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-5">
+          <ol className="reveal-group mt-14 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-5">
             {journey.map((s) => (
               <li key={s.step} className="border-t border-line pt-5">
                 <span className="label text-wine">{s.step}</span>
@@ -225,7 +225,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="relative overflow-hidden">
+      <section className="relative">
         <Plate
           src={atelierArt.craft}
           alt={atelierArt.craftAlt}
@@ -235,7 +235,7 @@ export default function Home() {
           className="absolute! inset-0"
         />
         <div className="absolute inset-0 bg-ink/45" />
-        <div className="relative mx-auto flex max-w-[1600px] flex-col items-start gap-8 px-6 py-28 text-paper lg:flex-row lg:items-end lg:justify-between lg:px-12">
+        <div className="reveal relative mx-auto flex max-w-[1600px] flex-col items-start gap-8 px-6 py-28 text-paper lg:flex-row lg:items-end lg:justify-between lg:px-12">
           <h2 className="max-w-2xl font-display text-4xl font-light leading-tight sm:text-5xl">
             Tell us the date. We will tell you what is possible.
           </h2>

@@ -67,7 +67,7 @@ export function SiteHeader() {
       </div>
 
       {open && (
-        <nav className="border-t border-line bg-ivory text-ink">
+        <nav className="menu-in border-t border-line bg-ivory text-ink">
           <ul className="mx-auto grid max-w-[1600px] gap-px px-6 py-10 sm:grid-cols-2 lg:grid-cols-5 lg:px-12">
             {links.map((l) => (
               <li key={l.href}>

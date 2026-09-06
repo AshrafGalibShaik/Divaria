@@ -20,7 +20,7 @@ export default function AtelierPage() {
       </section>
 
       {/* Brand story, in the label's own words */}
-      <section className="mx-auto grid max-w-[1600px] gap-14 px-6 py-20 lg:grid-cols-2 lg:px-12 lg:py-28">
+      <section className="reveal-group mx-auto grid max-w-[1600px] gap-14 px-6 py-20 lg:grid-cols-2 lg:px-12 lg:py-28">
         {/* Talking head, so it keeps its sound and waits to be played. */}
         <figure>
           <video
@@ -69,7 +69,7 @@ export default function AtelierPage() {
 
       {/* Craft */}
       <section className="mx-auto max-w-[1600px] px-6 pb-20 lg:px-12 lg:pb-28">
-        <div className="grid gap-6 sm:grid-cols-3">
+        <div className="reveal-group grid gap-6 sm:grid-cols-3">
           <Plate
             src={art.heirloom}
             alt={art.heirloomAlt}
@@ -98,7 +98,7 @@ export default function AtelierPage() {
 
       {/* Reels */}
       <section className="mx-auto max-w-[1600px] px-6 pb-20 lg:px-12 lg:pb-28">
-        <div className="grid gap-6 sm:grid-cols-2">
+        <div className="reveal-group grid gap-6 sm:grid-cols-2">
           {film.atelier.map((clip) => (
             <figure key={clip.name}>
               <div className="plate aspect-4/5 overflow-hidden">
@@ -116,7 +116,7 @@ export default function AtelierPage() {
           <h2 className="font-display text-4xl font-light lg:text-5xl">
             How a commission runs
           </h2>
-          <ol className="mt-14 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-5">
+          <ol className="reveal-group mt-14 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-5">
             {journey.map((s) => (
               <li key={s.step} className="border-t border-line pt-5">
                 <span className="label text-wine">{s.step}</span>
@@ -129,7 +129,7 @@ export default function AtelierPage() {
       </section>
 
       {/* Bespoke */}
-      <section className="relative overflow-hidden">
+      <section className="relative">
         <Plate
           src={art.madeForYou}
           alt={art.madeForYouAlt}
@@ -137,7 +137,7 @@ export default function AtelierPage() {
           position="50% 30%"
           className="absolute! inset-0"
         />
-        <div className="relative mx-auto max-w-[1600px] px-6 py-28 text-center lg:px-12 lg:py-36">
+        <div className="reveal relative mx-auto max-w-[1600px] px-6 py-28 text-center lg:px-12 lg:py-36">
           <p className="mx-auto max-w-2xl font-display text-3xl font-light leading-snug text-ink/85 sm:text-4xl">
             {story.bespoke}
           </p>
@@ -159,7 +159,7 @@ export default function AtelierPage() {
               Half a wedding party is rarely in the same country as the atelier.
               The process is built for that.
             </p>
-            <ul className="mt-10 grid gap-8 sm:grid-cols-2">
+            <ul className="reveal-group mt-10 grid gap-8 sm:grid-cols-2">
               {[
                 [
                   "Time-zone scheduling",

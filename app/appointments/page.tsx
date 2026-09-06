@@ -24,7 +24,7 @@ export default function AppointmentsPage() {
         </p>
       </section>
 
-      <section className="mx-auto grid max-w-[1600px] gap-16 px-6 py-20 lg:grid-cols-12 lg:px-12 lg:py-28">
+      <section className="reveal-group mx-auto grid max-w-[1600px] gap-16 px-6 py-20 lg:grid-cols-12 lg:px-12 lg:py-28">
         <div className="lg:col-span-7">
           <EnquiryForm />
         </div>
