@@ -25,7 +25,7 @@ export function EnquiryForm() {
       get("message"),
     ].join("\n");
 
-    const subject = `Consultation enquiry — ${get("interest")}`;
+    const subject = `Consultation enquiry: ${get("interest")}`;
     setSent({
       wa: `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(
         `Hello Divaria,\n\n${body}`,
@@ -42,7 +42,7 @@ export function EnquiryForm() {
         <h2 className="font-display text-3xl">Your enquiry is ready to send.</h2>
         <p className="mt-4 max-w-lg leading-relaxed text-muted">
           Nothing has been sent yet. Choose how you would like it to reach the
-          atelier — Dimple replies to both herself, usually within a working day.
+          atelier. Dimple answers both herself, usually within a working day.
         </p>
         <div className="mt-8 flex flex-wrap gap-4">
           <a

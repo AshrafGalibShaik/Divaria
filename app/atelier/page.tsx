@@ -6,7 +6,7 @@ import { art, atelierArt, collections, film, founder, journey, site, story } fro
 export const metadata = {
   title: "The Atelier",
   description:
-    "Divaria by Dimple — fifteen years, a single karigar to a full workroom in Guntur, and over 5,000 clients dressed across South India and beyond.",
+    "Divaria by Dimple. Fifteen years from a single karigar to a full workroom in Guntur, and over 5,000 clients dressed across South India and beyond.",
 };
 
 export default function AtelierPage() {
@@ -15,7 +15,7 @@ export default function AtelierPage() {
       <section className="mx-auto max-w-[1600px] px-6 pt-36 lg:px-12 lg:pt-44">
         <p className="label text-muted">{site.signature}</p>
         <h1 className="mt-5 max-w-4xl font-display text-5xl font-light leading-[1.05] sm:text-6xl lg:text-7xl">
-          One designer. One workroom. Every piece fitted by hand.
+          Dimple fits every piece herself, in one workroom in Guntur.
         </h1>
       </section>
 
@@ -48,12 +48,12 @@ export default function AtelierPage() {
             ))}
             <p>
               Before Divaria, Dimple worked with designers including Manish
-              Malhotra. She still takes every consultation herself — the first
-              call, the sketches, the fittings, the final press.
+              Malhotra. She still takes every consultation herself, from the
+              first call through the sketches and the fittings to the final press.
             </p>
             <p>
-              In the film she puts it plainly: {founder.gist} It ends where the
-              whole business does — “{founder.closing.toLowerCase()}”
+              In the film she puts it plainly. {founder.gist} She ends on this:
+              “{founder.closing.toLowerCase()}”
             </p>
           </div>
           <dl className="mt-12 grid gap-8 border-t border-line pt-8 sm:grid-cols-3">
@@ -90,9 +90,10 @@ export default function AtelierPage() {
           />
         </div>
         <p className="mt-8 max-w-2xl leading-relaxed text-muted">
-          The workroom sits in {site.city}. Zardosi, aari, mirror and thread work
-          are done on frames, by hand, in the building — patterns traced onto net
-          the way they were when there was one karigar and one table.
+          The workroom sits in {site.city}. Zardosi, aari, mirror and thread
+          work all happen on frames, by hand, in the building. Patterns are
+          still traced onto net the way they were when there was one karigar and
+          one table.
         </p>
       </section>
 

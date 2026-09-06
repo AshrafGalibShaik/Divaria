@@ -6,7 +6,7 @@ import { Reel } from "../components/reel";
 export const metadata = {
   title: "Book an Appointment",
   description:
-    "Consultations with Dimple — at the atelier in Guntur or on video, scheduled to your time zone. Bridal, pret, menswear and bespoke commissions.",
+    "Consultations with Dimple, at the atelier in Guntur or on video, scheduled to your time zone. Bridal, pret, menswear and bespoke commissions.",
 };
 
 export default function AppointmentsPage() {
@@ -18,9 +18,9 @@ export default function AppointmentsPage() {
           Every consultation is with Dimple.
         </h1>
         <p className="mt-8 max-w-2xl leading-relaxed text-muted lg:text-lg">
-          Tell us the occasion and the date. You will hear back with what is
-          possible in the time available, an indicative range, and a slot that
-          works in your time zone.
+          Tell us the occasion and the date. You will hear back with what can
+          be made in the time available, a rough price range, and a slot that
+          works where you are.
         </p>
       </section>
 
@@ -66,8 +66,8 @@ export default function AppointmentsPage() {
               <div>
                 <dt className="font-display text-xl">Lead times</dt>
                 <dd className="text-muted">
-                  Bridal 16–20 weeks · Menswear 8–10 · Bespoke 10–14 · Pret 3–5.
-                  Shorter timelines are sometimes possible — ask.
+                  Bridal 16-20 weeks · Menswear 8-10 · Bespoke 10-14 · Pret
+                  3-5. Shorter timelines are sometimes possible, so ask.
                 </dd>
               </div>
               <div>

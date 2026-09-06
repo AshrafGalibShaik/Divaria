@@ -50,7 +50,7 @@ export function SiteHeader() {
           <span className="hidden sm:inline">{open ? "Close" : "Menu"}</span>
         </button>
 
-        <Link href="/" aria-label="Label Divaria — home" onClick={() => setOpen(false)}>
+        <Link href="/" aria-label="Label Divaria home" onClick={() => setOpen(false)}>
           <Wordmark className="w-36 sm:w-48" invert={overHero} />
         </Link>
 

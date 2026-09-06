@@ -38,13 +38,13 @@ export const collections: Collection[] = [
     blurb:
       "Kanjivaram, silk and tissue drapes built for the muhurtham, the reception and every ceremony between.",
     intro:
-      "Every bridal commission begins as a conversation with Dimple and ends in a fitting room. Nothing is cut twice, nothing is stocked, and no two brides leave the atelier with the same piece.",
+      "A bridal commission starts as a conversation with Dimple and ends in a fitting room. Nothing here is stocked. Each piece is cut for the bride who ordered it, so the same design never goes out twice.",
     lead: "16-20 weeks",
     cover: img("scarlet-02"),
     feature: {
       reel: "mannequin-to-bride",
       title: "Mannequin to bride",
-      body: "The blouse is built on a form first — cups, boning, the back opening — then fitted on the bride and worked again. The piece in the film went out as it is shown, to one wearer.",
+      body: "The blouse is built on a form first, with the cups, the boning and the back opening settled before anyone tries it on. Then it goes on the bride and gets worked again. The piece in the film left the atelier looking exactly like that, for one wearer.",
     },
     pieces: [
       {
@@ -98,14 +98,14 @@ export const collections: Collection[] = [
     blurb:
       "Anarkalis, shararas and draped sets for the days around the wedding, and the years after it.",
     intro:
-      "Pret is where the atelier breathes. Cleaner lines, lighter hand-work, pieces that go from a family lunch to a sangeet without changing register.",
+      "Pret is the lighter end of the workroom. Cleaner lines and less hand-work, so a piece can go to a family lunch and then to a sangeet without looking wrong at either.",
     lead: "3-5 weeks",
     cover: img("pret-02"),
     feature: {
       src: brand("mul"),
       alt: "Introducing the Mul collection",
       title: "The Mul Collection",
-      body: "Timeless silhouettes, delicate craftsmanship and the finest mul fabric — created for effortless elegance every day.",
+      body: "Timeless silhouettes, delicate craftsmanship and the finest mul fabric, created for effortless elegance every day.",
     },
     pieces: [
       {
@@ -165,13 +165,13 @@ export const collections: Collection[] = [
     blurb:
       "Kurtas, panchas and layered sets cut on the same table, to the same calendar, as the bride's.",
     intro:
-      "Grooms are measured and fitted in the same atelier, on the same calendar as the bride, so palettes and hand-work read as one family across the events.",
+      "Grooms are measured and fitted in the same workroom, on the same calendar as the bride. That is why the colours and the hand-work look related when everyone stands together.",
     lead: "8-10 weeks",
     cover: img("reception-07"),
     feature: {
       reel: "tailored-to-you",
       title: "Tailored to you",
-      body: "First stroke to final fitting: the design is drawn digitally, cut, stitched and adjusted on the body until the shoulder sits right. Tailored for moments that matter.",
+      body: "The design is drawn on a tablet, then cut, stitched and adjusted on the body until the shoulder sits right. Tailored for moments that matter.",
     },
     pieces: [
       {
@@ -219,7 +219,7 @@ export const collections: Collection[] = [
     blurb:
       "Half sarees, haldi sets and family edits, drafted from a sketch or from a fabric you have carried for years.",
     intro:
-      "Bring a sketch, a photograph, or a saree that belonged to someone else. The atelier drafts a fresh pattern, makes a toile, and fits it until it is right.",
+      "Bring a sketch, a photograph, or a saree that belonged to your mother. Dimple drafts a fresh pattern for it, makes a toile, and fits it until it is right.",
     lead: "10-14 weeks",
     cover: img("halfsaree-01"),
     pieces: [
@@ -310,7 +310,7 @@ export const story = {
     "A label born not out of trend, but out of truth. A brand built through challenges, trust, and craftsmanship. A designer-led house that believes fashion isn't just what you wear, it's how you feel. This is Dimple's journey. This is Label Divaria.",
   paragraphs: [
     "Fifteen years ago, in a time when designer boutiques were rare in India, Dimple launched Label Divaria from a tiny shop with a single karigar and a head full of designs.",
-    "What began as a passion project grew organically through client trust, word of mouth, and an unwavering commitment to quality. From sketching on email to dressing over 5,000 clients across South India and beyond, Dimple built more than a label — she built lasting relationships.",
+    "What began as a passion project grew organically through client trust, word of mouth, and an unwavering commitment to quality. From sketching on email to dressing over 5,000 clients across South India and beyond, Dimple built more than a label. She built lasting relationships.",
     "Today, Label Divaria returns to its roots with renewed vision, original collections, and the same heart that started it all.",
   ],
   stats: [
@@ -366,5 +366,5 @@ export const founder = {
   role: "Founder, Label Divaria",
   quote: "I have been part of hundreds of weddings, and it still gives me goosebumps.",
   closing: "Where that feels personal, and truly yours.",
-  gist: "She introduces herself, counts fifteen years of dressing brides and their families, and describes how a client usually arrives for one piece and comes back for the wedding, the reception and the celebration after it. Fabric, colour and fine embroidery are what she says separate simply dressing from standing out.",
+  gist: "She introduces herself, counts fifteen years of dressing brides and their families, and describes how a client usually turns up wanting one outfit and then comes back for the wedding, the reception, and the celebration after that. Fabric, colour and fine embroidery are what she says separate simply dressing from standing out.",
 };

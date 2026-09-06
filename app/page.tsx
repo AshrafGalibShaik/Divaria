@@ -6,7 +6,7 @@ import { art, atelierArt, collections, film, journey, press, site, story } from 
 export default function Home() {
   return (
     <>
-      {/* Hero — kaadhal-hero.mp4 is the Kaadhal reel cropped past its own
+      {/* Hero. kaadhal-hero.mp4 is the Kaadhal reel cropped past its own
           titles, so type can sit over it at any viewport shape. */}
       <section className="relative flex h-[100svh] min-h-[560px] items-end overflow-hidden bg-ink">
         <Reel
@@ -22,8 +22,8 @@ export default function Home() {
             {site.signature} · {site.city}
           </p>
           <h1 className="rise mt-6 max-w-4xl font-display text-5xl font-light leading-[1.03] sm:text-6xl lg:text-7xl xl:text-8xl">
-            Cut for one bride,
-            <br className="hidden sm:inline" /> one date, one measure.
+            Cut for the bride
+            <br className="hidden sm:inline" /> who ordered it.
           </h1>
           <div className="rise mt-9 flex flex-wrap items-center gap-x-10 gap-y-4">
             <Link
@@ -40,8 +40,8 @@ export default function Home() {
             </Link>
           </div>
           <p className="rise mt-12 border-t border-paper/20 pt-5 text-sm text-paper/60">
-            <span className="label">{film.teaser.season}</span> · {film.teaser.title}{" "}
-            — on the frame now
+            <span className="label">{film.teaser.season}</span> · {film.teaser.title},{" "}
+            on the frame now
           </p>
         </div>
       </section>
@@ -128,10 +128,10 @@ export default function Home() {
               A bride in Dallas is fitted the same way as a bride in Guntur.
             </h2>
             <p className="mt-8 max-w-lg leading-relaxed text-ivory/70">
-              Consultations run on video, scheduled to your time zone. Measurements
-              are taken in a guided session and kept on file. A fit garment is
-              shipped ahead of the final piece, so the last alteration happens
-              before the couture ever crosses a border.
+              Consultations run on video, booked to your hours rather than ours.
+              Measurements are taken in a guided session and kept on file, and a
+              fit garment is shipped ahead of the final piece, so the last
+              alteration is done before the couture leaves India.
             </p>
             <dl className="mt-12 grid grid-cols-3 gap-8 border-t border-ivory/15 pt-8">
               {[
@@ -171,8 +171,8 @@ export default function Home() {
               {press.title}
             </h2>
             <p className="mt-6 max-w-lg leading-relaxed text-muted">
-              {press.note}. The same lehenga was drafted, embroidered and fitted
-              in the Guntur workroom — one piece, one wearer, no repeat.
+              {press.note}. That lehenga was drafted, embroidered and fitted in
+              the Guntur workroom for one wearer, and it was never made again.
             </p>
             <Link
               href="/collections/bridal"
@@ -237,7 +237,8 @@ export default function Home() {
         <div className="absolute inset-0 bg-ink/45" />
         <div className="reveal relative mx-auto flex max-w-[1600px] flex-col items-start gap-8 px-6 py-28 text-paper lg:flex-row lg:items-end lg:justify-between lg:px-12">
           <h2 className="max-w-2xl font-display text-4xl font-light leading-tight sm:text-5xl">
-            Tell us the date. We will tell you what is possible.
+            Tell us the date and we will tell you what can be made in the
+            time you have.
           </h2>
           <Link
             href="/appointments"

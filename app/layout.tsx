@@ -16,8 +16,8 @@ const sans = Jost({ variable: "--font-sans", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: `${site.name} — Pret & Bridal Couture, ${site.city}`,
-    template: `%s — ${site.name}`,
+    default: `${site.name} | Pret & Bridal Couture in ${site.city}`,
+    template: `%s | ${site.name}`,
   },
   description:
     "Divaria by Dimple. Bridal couture, pret and Indo-Western menswear, made to order in Guntur and shipped worldwide. Consultations with the founder, in person or on video.",

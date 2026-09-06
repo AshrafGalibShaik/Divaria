@@ -11,7 +11,7 @@ export function Wordmark({
   return (
     <Image
       src="/divaria-wordmark.png"
-      alt="Label Divaria — Pret | Bridal"
+      alt="Label Divaria, Pret | Bridal"
       width={1060}
       height={237}
       priority
