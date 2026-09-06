@@ -318,7 +318,6 @@ export const story = {
     ["5,000+", "Clients dressed"],
     ["1 → many", "Karigars, still in-house"],
   ],
-  bespoke: "We bring your vision to life through bespoke creations. Made for you.",
 };
 
 export const art = {
@@ -329,11 +328,6 @@ export const art = {
   story: brand("brand-story"),
   storyAlt: "The Label Divaria brand story, set on a red banarasi border",
   texture: brand("texture-leaf"),
-  textureAlt: "Embossed ginkgo leaf texture on ivory paper",
-  madeForYou: brand("made-for-you"),
-  madeForYouAlt: "Embossed artwork reading, made for you",
-  mul: brand("mul"),
-  mulAlt: "Introducing the Mul collection",
 };
 
 /** Silent looping clips in /public/film (16s or less, poster frame alongside). */

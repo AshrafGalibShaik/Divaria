@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Plate } from "../components/plate";
 import { Reel } from "../components/reel";
-import { art, atelierArt, collections, film, founder, journey, site, story } from "../lib/content";
+import { art, atelierArt, film, founder, journey, site, story } from "../lib/content";
 
 export const metadata = {
   title: "The Atelier",
@@ -126,28 +126,6 @@ export default function AtelierPage() {
               </li>
             ))}
           </ol>
-        </div>
-      </section>
-
-      {/* Bespoke */}
-      <section className="relative">
-        <Plate
-          src={art.madeForYou}
-          alt={art.madeForYouAlt}
-          sizes="100vw"
-          position="50% 30%"
-          className="absolute! inset-0"
-        />
-        <div className="reveal relative mx-auto max-w-[1600px] px-6 py-28 text-center lg:px-12 lg:py-36">
-          <p className="mx-auto max-w-2xl font-display text-3xl font-light leading-snug text-ink/85 sm:text-4xl">
-            {story.bespoke}
-          </p>
-          <Link
-            href={`/collections/${collections[3].slug}`}
-            className="label mt-10 inline-block border-b border-ink pb-1 transition-opacity hover:opacity-60"
-          >
-            Customised designer wear
-          </Link>
         </div>
       </section>
 
