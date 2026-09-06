@@ -61,9 +61,9 @@ export const collections: Collection[] = [
       },
       {
         name: "Blouse, Hand-Worked",
-        note: "Open back, mirror and thread",
+        note: "Open back, gold and stone work",
         src: img("muhurtham-11"),
-        alt: "Detail of a hand-embroidered open-back bridal blouse with jadai",
+        alt: "Back view of a hand-worked pink bridal blouse, open back, with the jadai over it",
       },
       {
         name: "Reception Drape",
@@ -84,10 +84,10 @@ export const collections: Collection[] = [
         alt: "Bride in a rust orange lehenga with a hand-embroidered kalamkari dupatta",
       },
       {
-        name: "Pellikuthuru Half Saree",
-        note: "Pink and yellow, light body",
+        name: "Pellikuthuru Half Sarees",
+        note: "Pink and yellow, made as a pair",
         src: img("pellikuthuru-01"),
-        alt: "Bride at her pellikuthuru in a pink and yellow half saree",
+        alt: "Two young women in pink and yellow half sarees at a pellikuthuru",
       },
     ],
   },
@@ -128,9 +128,9 @@ export const collections: Collection[] = [
       },
       {
         name: "Lilac Anarkali",
-        note: "Hand-painted florals",
+        note: "Multicolour floral thread work",
         src: img("pret-03"),
-        alt: "Lilac anarkali with hand-painted floral work",
+        alt: "Lilac anarkali with multicolour floral thread work",
       },
       {
         name: "Ivory Anarkali",
@@ -145,22 +145,22 @@ export const collections: Collection[] = [
         alt: "Black draped kaftan worn with a sequinned jacket",
       },
       {
-        name: "Rose Anarkali",
+        name: "Rani Pink Kurta Set",
         note: "Georgette, tonal thread",
         src: img("pret-08"),
-        alt: "Rose pink anarkali with a matching dupatta",
+        alt: "Rani pink kurta set with a matching dupatta",
       },
       {
         name: "Corset Bodice",
         note: "Boned, cup-fitted to measure",
         src: img("pret-04"),
-        alt: "Corset bodice with sequin work on a dress form",
+        alt: "Ivory corset bodice with pastel floral work, on a dress form",
       },
     ],
   },
   {
     slug: "menswear",
-    name: "Indo-Western Menswear",
+    name: "Menswear & Family",
     eyebrow: "For the groom and the party",
     blurb:
       "Kurtas, panchas and layered sets cut on the same table, to the same calendar, as the bride's.",
@@ -178,19 +178,19 @@ export const collections: Collection[] = [
         name: "Muhurtham Pancha Set",
         note: "Cream silk, gold border",
         src: img("muhurtham-03"),
-        alt: "Groom and bride exchanging garlands at the muhurtham",
+        alt: "Groom in a cream kurta and pancha beside the bride, both garlanded",
       },
       {
         name: "Rose Kurta Set",
         note: "Tonal thread, matched to the bride",
         src: img("muhurtham-16"),
-        alt: "Couple at their reception in matched rose pink",
+        alt: "Couple in matched rose pink at the wedding",
       },
       {
         name: "Groom and Party",
         note: "Made together, one palette",
         src: img("reception-07"),
-        alt: "Groom with the wedding party in matched cream silk",
+        alt: "Couple and family in matched cream and gold silk",
       },
       {
         name: "Ceremony Kurta",
@@ -200,12 +200,12 @@ export const collections: Collection[] = [
       },
       {
         name: "Family Edit",
-        note: "Nine pieces, one commission",
+        note: "Six pieces, one commission",
         src: img("reception-06"),
-        alt: "Wedding family portrait in matched pastels and cream",
+        alt: "Couple and family in matched pastels and cream",
       },
       {
-        name: "Sangeet Kurta",
+        name: "Muhurtham Kurta",
         note: "Ivory, thread and sequin",
         src: img("muhurtham-09"),
         alt: "Couple seated during the wedding rituals",
@@ -230,34 +230,34 @@ export const collections: Collection[] = [
         alt: "Young woman in a purple and gold half saree",
       },
       {
-        name: "Haldi Set, Lilac",
+        name: "Haldi Saree, Mauve",
         note: "Handloom silk, light body",
         src: img("haldi-02"),
-        alt: "Bride in a lilac handloom set at her haldi",
+        alt: "Woman in a mauve handloom saree against marigolds at a haldi",
       },
       {
         name: "Sister Sets",
         note: "One palette, many people",
         src: img("haldi-05"),
-        alt: "Two sisters in matched green and lilac handloom",
+        alt: "Two young women in green and lilac half sarees",
       },
       {
         name: "Pellikuthuru Pink",
-        note: "Yellow and rose, mirror work",
+        note: "Pink, green and yellow",
         src: img("pellikuthuru-03"),
-        alt: "Bride and her sister in pink and yellow at the pellikuthuru",
+        alt: "Two young women in pink, green and yellow at a pellikuthuru",
       },
       {
         name: "Family Occasion Edit",
-        note: "Fitted across four generations",
+        note: "One family, one palette",
         src: img("halfsaree-03"),
-        alt: "Family in coordinated pastel occasion wear",
+        alt: "A family of five in coordinated pink and lilac occasion wear",
       },
       {
-        name: "Mehendi Green",
+        name: "Haldi Green",
         note: "Kanjivaram, contemporary drape",
         src: img("haldi-07"),
-        alt: "Woman in a green kanjivaram saree at a mehendi",
+        alt: "Woman in a green kanjivaram saree against marigolds at a haldi",
       },
     ],
   },
@@ -267,7 +267,7 @@ export const collections: Collection[] = [
 export const enquiryOptions = [
   { label: "Bridal couture", slug: "bridal" },
   { label: "Pret", slug: "pret" },
-  { label: "Indo-Western menswear", slug: "menswear" },
+  { label: "Menswear & family", slug: "menswear" },
   { label: "Customised designer wear", slug: "bespoke" },
   { label: "Trousseau or family edit", slug: "bridal" },
 ];
@@ -316,7 +316,9 @@ export const atelierArt = {
 export const story = {
   tagline: "A garden of heritage, woven in every thread.",
   manifesto:
-    "A label born not out of trend, but out of truth. A brand built through challenges, trust, and craftsmanship. A designer-led house that believes fashion isn't just what you wear, it's how you feel. This is Dimple's journey. This is Label Divaria.",
+    "A label born not out of trend, but out of truth. A brand built through challenges, trust, and craftsmanship. A designer-led house that believes fashion isn't just what you wear, it's how you feel.",
+  /** The closing line, kept apart so it can be set apart. */
+  manifestoClose: "This is Dimple's journey. This is Label Divaria.",
   paragraphs: [
     "Fifteen years ago, in a time when designer boutiques were rare in India, Dimple launched Label Divaria from a tiny shop with a single karigar and a head full of designs.",
     "What began as a passion project grew organically through client trust, word of mouth, and an unwavering commitment to quality. From sketching on email to dressing over 5,000 clients across South India and beyond, Dimple built more than a label. She built lasting relationships.",
@@ -337,6 +339,9 @@ export const art = {
   story: brand("brand-story"),
   storyAlt: "The Label Divaria brand story, set on a red banarasi border",
   texture: brand("texture-leaf"),
+  house: img("editorial-01"),
+  houseAlt:
+    "Model in an orange silk blouse and kalamkari drape, shot against a warm ground",
 };
 
 /** Silent looping clips in /public/film (16s or less, poster frame alongside). */
@@ -347,8 +352,8 @@ export const film = {
     { name: "loom", label: "The loom in action, different weaves in one day", caption: "Loom in action" },
   ],
   atelier: [
-    { name: "behind-the-seams", label: "Close-up of gold thread and stone work, behind the seams", caption: "Behind the seams" },
-    { name: "process-vs-design", label: "A gold mesh blouse, the process beside the finished design", caption: "The process vs the design" },
+    { name: "behind-the-seams", label: "Close-up of gold thread and stone work, behind the scenes", caption: "Behind the scenes" },
+    { name: "process-vs-design", label: "Gold mesh work on purple, the process beside the finished design", caption: "The process vs the design" },
   ],
   showroom: { name: "showroom", label: "Clients in kanjivaram sarees inside the Divaria boutique", caption: "In the boutique" },
   /** The same clip cropped past its own titles, for use behind type. */

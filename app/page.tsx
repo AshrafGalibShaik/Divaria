@@ -17,18 +17,18 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/35 to-ink/60" />
 
-        <div className="relative mx-auto w-full max-w-[1600px] px-6 pb-16 text-paper lg:px-12 lg:pb-20">
+        <div className="relative mx-auto w-full max-w-[1600px] px-6 sm:px-8 pb-12 text-paper lg:px-12 lg:pb-16">
           <p className="label rise text-paper/70">
             {site.signature} · {site.city}
           </p>
-          <h1 className="rise mt-6 max-w-4xl font-display text-5xl font-light leading-[1.03] sm:text-6xl lg:text-7xl xl:text-8xl">
+          <h1 className="rise mt-6 max-w-4xl font-display text-5xl font-light leading-[1.03] [text-shadow:0_2px_36px_rgba(20,17,15,0.5)] sm:text-6xl lg:text-7xl xl:text-8xl">
             Cut for the bride
             <br className="hidden sm:inline" /> who ordered it.
           </h1>
-          <div className="rise mt-9 flex flex-wrap items-center gap-x-10 gap-y-4">
+          <div className="rise mt-9 flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:gap-x-10">
             <Link
               href="/appointments"
-              className="label border border-paper/70 px-8 py-4 transition-colors hover:bg-paper hover:text-ink"
+              className="label w-full border border-paper/70 px-8 py-4 text-center transition-colors hover:bg-paper hover:text-ink sm:w-auto"
             >
               Book a consultation
             </Link>
@@ -46,18 +46,28 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Statement */}
-      <section className="mx-auto max-w-[1600px] px-6 py-24 lg:px-12 lg:py-36">
-        <div className="grid gap-12 lg:grid-cols-12">
-          <p className="label reveal text-muted lg:col-span-3">The house</p>
-          <div className="reveal lg:col-span-9">
-            <p className="max-w-4xl font-display text-3xl font-light leading-[1.3] sm:text-4xl lg:text-[2.75rem]">
+      {/* Statement. A diptych (07): the words on the left, one warm frame on
+          the right, so the house's own page is not a wall of black on ivory. */}
+      <section className="mx-auto max-w-[1600px] px-6 sm:px-8 py-16 sm:py-24 lg:px-12 lg:py-36">
+        <div className="grid gap-12 lg:grid-cols-[62fr_38fr] lg:gap-20">
+          <div className="reveal">
+            <p className="label flex items-center gap-3 text-muted">
+              <span className="inline-block h-px w-8 bg-wine" />
+              The house
+            </p>
+            <p className="mt-10 font-display text-2xl font-light leading-[1.35] sm:text-4xl sm:leading-[1.3] lg:mt-14 lg:text-[2.5rem]">
               {story.manifesto}
+            </p>
+            {/* Isolation (01): the closing line is the one the house is
+                remembered by, so it gets its own space and a shorter measure
+                instead of trailing the paragraph above. */}
+            <p className="mt-8 max-w-xl font-display text-xl font-light leading-[1.4] text-muted sm:mt-10 sm:text-3xl sm:leading-[1.35]">
+              {story.manifestoClose}
             </p>
             <dl className="mt-14 grid gap-8 border-t border-line pt-8 sm:grid-cols-3">
               {story.stats.map(([k, v]) => (
                 <div key={v}>
-                  <dt className="font-display text-3xl lg:text-4xl">{k}</dt>
+                  <dt className="font-display text-3xl">{k}</dt>
                   <dd className="label mt-2 text-muted">{v}</dd>
                 </div>
               ))}
@@ -69,20 +79,28 @@ export default function Home() {
               Inside the atelier
             </Link>
           </div>
+
+          <Plate
+            src={art.house}
+            alt={art.houseAlt}
+            sizes="(min-width: 1024px) 38vw, 100vw"
+            position="50% 20%"
+            className="reveal lift aspect-4/5 w-full lg:h-full lg:aspect-auto"
+          />
         </div>
       </section>
 
       {/* Collections */}
       <section className="border-t border-line">
-        <div className="mx-auto max-w-[1600px] px-6 lg:px-12">
+        <div className="mx-auto max-w-[1600px] px-6 sm:px-8 lg:px-12">
           <div className="flex items-baseline justify-between py-10">
             <h2 className="font-display text-4xl font-light lg:text-5xl">Collections</h2>
             <p className="label hidden text-muted sm:block">Made to order</p>
           </div>
-          <div className="reveal-group grid gap-x-6 gap-y-14 pb-24 sm:grid-cols-2 lg:grid-cols-4 lg:pb-32">
+          <div className="reveal-group grid grid-cols-2 gap-x-4 gap-y-10 pb-16 sm:gap-x-6 sm:gap-y-14 sm:pb-24 lg:grid-cols-4 lg:pb-32">
             {collections.map((c) => (
               <Link key={c.slug} href={`/collections/${c.slug}`} className="group block">
-                <div className="overflow-hidden">
+                <div className="lift overflow-hidden">
                   <Plate
                     src={c.cover}
                     alt={c.name}
@@ -90,10 +108,10 @@ export default function Home() {
                     className="aspect-[3/4] transition-transform duration-[1.2s] ease-out group-hover:scale-[1.04]"
                   />
                 </div>
-                <p className="label mt-5 text-muted">{c.eyebrow}</p>
-                <h3 className="mt-2 font-display text-2xl">{c.name}</h3>
-                <p className="mt-2 max-w-xs text-sm leading-relaxed text-muted">{c.blurb}</p>
-                <span className="label mt-4 inline-block border-b border-ink/30 pb-1 transition-colors group-hover:border-ink">
+                <p className="label mt-5 text-muted sm:mt-7">{c.eyebrow}</p>
+                <h3 className="mt-1.5 font-display text-xl sm:text-2xl">{c.name}</h3>
+                <p className="mt-1.5 hidden max-w-xs text-sm leading-relaxed text-muted sm:block">{c.blurb}</p>
+                <span className="label mt-5 inline-block border-b border-ink/30 pb-1 transition-colors group-hover:border-ink sm:mt-7">
                   Explore
                 </span>
               </Link>
@@ -111,8 +129,9 @@ export default function Home() {
           position="50% 40%"
           className="absolute! inset-0"
         />
-        <div className="reveal relative mx-auto max-w-[1600px] px-6 py-28 text-center lg:px-12 lg:py-36">
-          <p className="mx-auto max-w-3xl font-display text-3xl font-light leading-snug text-ink/85 sm:text-4xl lg:text-5xl">
+        <span className="inner-frame text-ink" />
+        <div className="reveal relative mx-auto max-w-[1600px] px-6 sm:px-8 py-24 sm:py-36 text-center lg:px-12 lg:py-52">
+          <p className="mx-auto max-w-2xl font-display text-3xl font-light leading-snug text-ink/85 sm:text-4xl lg:text-5xl">
             {story.tagline}
           </p>
           <p className="label mt-8 text-muted">Label Divaria</p>
@@ -121,7 +140,7 @@ export default function Home() {
 
       {/* Worldwide */}
       <section className="bg-ink text-ivory">
-        <div className="reveal-group mx-auto grid max-w-[1600px] items-center gap-14 px-6 py-24 lg:grid-cols-2 lg:px-12 lg:py-32">
+        <div className="reveal-group mx-auto grid max-w-[1600px] items-center gap-14 px-6 sm:px-8 py-16 sm:py-24 lg:grid-cols-[62fr_38fr] lg:px-12 lg:py-32">
           <div>
             <p className="label text-ivory/50">Guntur to anywhere</p>
             <h2 className="mt-6 font-display text-4xl font-light leading-tight sm:text-5xl lg:text-6xl">
@@ -149,21 +168,21 @@ export default function Home() {
           <Plate
             src={collections[0].pieces[3].src}
             alt={collections[0].pieces[3].alt}
-            sizes="(min-width: 1024px) 45vw, 100vw"
-            className="aspect-4/5 w-full"
+            sizes="(min-width: 1024px) 40vw, 100vw"
+            className="aspect-4/5 w-full lg:-mr-12"
           />
         </div>
       </section>
 
       {/* Press */}
-      <section className="mx-auto max-w-[1600px] px-6 py-24 lg:px-12 lg:py-32">
+      <section className="mx-auto max-w-[1600px] px-6 sm:px-8 py-16 sm:py-24 lg:px-12 lg:py-32">
         <div className="reveal-group grid items-center gap-14 lg:grid-cols-12">
           <Plate
             src={press.cover}
             alt={press.alt}
             sizes="(min-width: 1024px) 30vw, 100vw"
             position="50% 0%"
-            className="aspect-4/5 lg:col-span-4"
+            className="lift aspect-4/5 lg:col-span-4"
           />
           <div className="lg:col-span-7 lg:col-start-6">
             <p className="label text-muted">In print</p>
@@ -186,7 +205,7 @@ export default function Home() {
 
       {/* The making */}
       <section className="border-t border-line">
-        <div className="mx-auto max-w-[1600px] px-6 py-24 lg:px-12 lg:py-32">
+        <div className="mx-auto max-w-[1600px] px-6 sm:px-8 py-16 sm:py-24 lg:px-12 lg:py-32">
           <div className="flex flex-wrap items-baseline justify-between gap-4">
             <h2 className="font-display text-4xl font-light lg:text-5xl">
               The making
@@ -196,7 +215,7 @@ export default function Home() {
           <div className="reveal-group mt-12 grid gap-6 sm:grid-cols-3">
             {film.making.map((clip) => (
               <figure key={clip.name}>
-                <div className="plate aspect-9/16 overflow-hidden">
+                <div className="lift plate aspect-9/16 overflow-hidden">
                   <Reel name={clip.name} label={clip.label} />
                 </div>
                 <figcaption className="label mt-4 text-muted">{clip.caption}</figcaption>
@@ -208,7 +227,7 @@ export default function Home() {
 
       {/* Journey */}
       <section className="border-t border-line">
-        <div className="mx-auto max-w-[1600px] px-6 py-24 lg:px-12 lg:py-32">
+        <div className="mx-auto max-w-[1600px] px-6 sm:px-8 py-16 sm:py-24 lg:px-12 lg:py-32">
           <h2 className="font-display text-4xl font-light lg:text-5xl">
             From first call to final fitting
           </h2>
@@ -235,7 +254,8 @@ export default function Home() {
           className="absolute! inset-0"
         />
         <div className="absolute inset-0 bg-ink/45" />
-        <div className="reveal relative mx-auto flex max-w-[1600px] flex-col items-start gap-8 px-6 py-28 text-paper lg:flex-row lg:items-end lg:justify-between lg:px-12">
+        <span className="inner-frame text-paper" />
+        <div className="reveal relative mx-auto flex max-w-[1600px] flex-col items-start gap-8 px-6 sm:px-8 py-20 sm:py-28 text-paper lg:flex-row lg:items-end lg:justify-between lg:px-12">
           <h2 className="max-w-2xl font-display text-4xl font-light leading-tight sm:text-5xl">
             Tell us the date and we will tell you what can be made in the
             time you have.

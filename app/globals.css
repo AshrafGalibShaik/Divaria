@@ -37,6 +37,29 @@ body {
     linear-gradient(165deg, rgba(20, 17, 15, 0.02) 0%, rgba(20, 17, 15, 0.16) 100%);
 }
 
+/* Shadow (09). Tinted warm rather than neutral black, so a plate sits on the
+   ivory instead of punching a grey hole through it. Two layers: a tight contact
+   shadow for weight, a wide ambient one for depth. */
+@utility lift {
+  box-shadow:
+    0 1px 2px rgba(63, 45, 30, 0.07),
+    0 20px 44px -26px rgba(63, 45, 30, 0.38);
+}
+
+/* Framing (04). A hairline set inside a full-bleed band: a frame within the
+   frame, which gives a flat photograph a boundary and a depth cue. */
+@utility inner-frame {
+  position: absolute;
+  inset: 1.25rem;
+  border: 1px solid currentColor;
+  opacity: 0.28;
+  pointer-events: none;
+}
+
+@media (min-width: 1024px) {
+  .inner-frame { inset: 2rem; }
+}
+
 @keyframes rise {
   from { opacity: 0; transform: translateY(18px); }
   to { opacity: 1; transform: none; }

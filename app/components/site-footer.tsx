@@ -5,7 +5,7 @@ import { collections, site, story } from "../lib/content";
 export function SiteFooter() {
   return (
     <footer className="bg-ink text-ivory">
-      <div className="mx-auto grid max-w-[1600px] gap-14 px-6 py-20 lg:grid-cols-4 lg:px-12">
+      <div className="mx-auto grid max-w-[1600px] gap-14 px-6 sm:px-8 py-14 sm:py-20 lg:grid-cols-4 lg:px-12">
         <div className="lg:col-span-2">
           <Wordmark className="w-48" invert />
           <p className="mt-6 max-w-sm font-display text-2xl leading-snug text-ivory/80">
@@ -64,7 +64,7 @@ export function SiteFooter() {
       </div>
 
       <div className="border-t border-ivory/15">
-        <div className="mx-auto flex max-w-[1600px] flex-col gap-2 px-6 py-6 text-[11px] text-ivory/50 sm:flex-row sm:justify-between lg:px-12">
+        <div className="mx-auto flex max-w-[1600px] flex-col gap-2 px-6 sm:px-8 py-6 text-[11px] text-ivory/50 sm:flex-row sm:justify-between lg:px-12">
           <p>© {new Date().getFullYear()} {site.name}. All pieces made to order.</p>
           <p>Consultations by appointment · Worldwide shipping</p>
         </div>

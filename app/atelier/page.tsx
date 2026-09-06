@@ -12,7 +12,7 @@ export const metadata = {
 export default function AtelierPage() {
   return (
     <>
-      <section className="mx-auto max-w-[1600px] px-6 pt-36 lg:px-12 lg:pt-44">
+      <section className="mx-auto max-w-[1600px] px-6 sm:px-8 pt-28 sm:pt-36 lg:px-12 lg:pt-44">
         <p className="label text-muted">{site.signature}</p>
         <h1 className="mt-5 max-w-4xl font-display text-5xl font-light leading-[1.05] sm:text-6xl lg:text-7xl">
           Dimple fits every piece herself, in one workroom in Guntur.
@@ -20,7 +20,7 @@ export default function AtelierPage() {
       </section>
 
       {/* Brand story, in the label's own words */}
-      <section className="reveal-group mx-auto grid max-w-[1600px] gap-14 px-6 py-20 lg:grid-cols-2 lg:px-12 lg:py-28">
+      <section className="reveal-group mx-auto grid max-w-[1600px] gap-14 px-6 sm:px-8 py-14 sm:py-20 lg:grid-cols-[38fr_62fr] lg:px-12 lg:py-28">
         {/* Talking head, so it keeps its sound and waits to be played. */}
         <figure>
           <video
@@ -29,7 +29,7 @@ export default function AtelierPage() {
             controls
             playsInline
             preload="metadata"
-            className="plate aspect-4/5 w-full bg-ink object-cover"
+            className="lift plate aspect-4/5 w-full bg-ink object-cover"
           />
           <figcaption className="mt-4 flex flex-wrap items-baseline justify-between gap-2">
             <span className="font-display text-2xl">{founder.name}</span>
@@ -41,7 +41,7 @@ export default function AtelierPage() {
           <blockquote className="mb-10 border-l border-wine pl-6 font-display text-3xl font-light leading-snug lg:text-4xl">
             “{founder.quote}”
           </blockquote>
-          <h2 className="label text-wine">Brand story</h2>
+          <h2 className="label text-muted">Brand story</h2>
           <div className="mt-6 space-y-6 leading-relaxed text-muted lg:text-lg">
             {story.paragraphs.map((p) => (
               <p key={p.slice(0, 24)}>{p}</p>
@@ -68,25 +68,25 @@ export default function AtelierPage() {
       </section>
 
       {/* Craft */}
-      <section className="mx-auto max-w-[1600px] px-6 pb-20 lg:px-12 lg:pb-28">
+      <section className="mx-auto max-w-[1600px] px-6 sm:px-8 pb-14 sm:pb-20 lg:px-12 lg:pb-28">
         <div className="reveal-group grid gap-6 sm:grid-cols-3">
           <Plate
             src={art.heirloom}
             alt={art.heirloomAlt}
             sizes="33vw"
-            className="aspect-3/4"
+            className="lift aspect-3/4"
           />
           <Plate
             src={atelierArt.craft}
             alt={atelierArt.craftAlt}
             sizes="33vw"
-            className="aspect-3/4"
+            className="lift aspect-3/4"
           />
           <Plate
             src={art.motif}
             alt={art.motifAlt}
             sizes="33vw"
-            className="aspect-3/4"
+            className="lift aspect-3/4"
           />
         </div>
         <p className="mt-8 max-w-2xl leading-relaxed text-muted">
@@ -98,11 +98,11 @@ export default function AtelierPage() {
       </section>
 
       {/* Reels */}
-      <section className="mx-auto max-w-[1600px] px-6 pb-20 lg:px-12 lg:pb-28">
-        <div className="reveal-group grid gap-6 sm:grid-cols-2">
+      <section className="mx-auto max-w-[1600px] px-6 sm:px-8 pb-14 sm:pb-20 lg:px-12 lg:pb-28">
+        <div className="reveal-group grid gap-6 sm:grid-cols-2 sm:gap-12">
           {film.atelier.map((clip) => (
             <figure key={clip.name}>
-              <div className="plate aspect-4/5 overflow-hidden">
+              <div className="lift plate aspect-4/5 overflow-hidden">
                 <Reel name={clip.name} label={clip.label} />
               </div>
               <figcaption className="label mt-4 text-muted">{clip.caption}</figcaption>
@@ -113,7 +113,7 @@ export default function AtelierPage() {
 
       {/* Journey */}
       <section className="border-y border-line bg-paper">
-        <div className="mx-auto max-w-[1600px] px-6 py-20 lg:px-12 lg:py-28">
+        <div className="mx-auto max-w-[1600px] px-6 sm:px-8 py-14 sm:py-20 lg:px-12 lg:py-28">
           <h2 className="font-display text-4xl font-light lg:text-5xl">
             How a commission runs
           </h2>
@@ -130,7 +130,7 @@ export default function AtelierPage() {
       </section>
 
       {/* Overseas */}
-      <section className="mx-auto max-w-[1600px] px-6 py-20 lg:px-12 lg:py-28">
+      <section className="mx-auto max-w-[1600px] px-6 sm:px-8 py-14 sm:py-20 lg:px-12 lg:py-28">
         <div className="grid gap-12 lg:grid-cols-12">
           <h2 className="label text-muted lg:col-span-3">For clients abroad</h2>
           <div className="lg:col-span-9">

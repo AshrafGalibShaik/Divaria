@@ -31,7 +31,7 @@ const next = [
 export default function AppointmentsPage() {
   return (
     <>
-      <section className="mx-auto max-w-[1600px] px-6 pt-36 lg:px-12 lg:pt-44">
+      <section className="mx-auto max-w-[1600px] px-6 sm:px-8 pt-28 sm:pt-36 lg:px-12 lg:pt-44">
         <p className="label text-muted">By appointment</p>
         <h1 className="mt-5 max-w-3xl font-display text-5xl font-light leading-[1.05] sm:text-6xl lg:text-7xl">
           Every consultation is with Dimple.
@@ -43,7 +43,7 @@ export default function AppointmentsPage() {
         </p>
       </section>
 
-      <section className="mx-auto grid max-w-[1600px] gap-16 px-6 py-16 lg:grid-cols-12 lg:px-12 lg:py-24">
+      <section className="mx-auto grid max-w-[1600px] gap-16 px-6 sm:px-8 py-12 sm:py-16 lg:grid-cols-12 lg:px-12 lg:py-24">
         <div className="lg:col-span-7">
           <EnquiryForm />
         </div>
@@ -51,7 +51,7 @@ export default function AppointmentsPage() {
         <aside className="lg:col-span-4 lg:col-start-9">
           <div className="lg:sticky lg:top-28">
             <figure>
-              <div className="plate aspect-4/5 overflow-hidden">
+              <div className="lift plate aspect-4/5 overflow-hidden">
                 <Reel name={film.showroom.name} label={film.showroom.label} />
               </div>
               <figcaption className="label mt-4 text-muted">
@@ -117,7 +117,7 @@ export default function AppointmentsPage() {
 
       {/* Lead times stated openly, rather than left for someone to ask about */}
       <section className="border-y border-line bg-paper">
-        <div className="mx-auto max-w-[1600px] px-6 py-16 lg:px-12 lg:py-20">
+        <div className="mx-auto max-w-[1600px] px-6 sm:px-8 py-12 sm:py-16 lg:px-12 lg:py-20">
           <div className="flex flex-wrap items-baseline justify-between gap-4">
             <h2 className="font-display text-4xl font-light lg:text-5xl">
               Lead times
@@ -143,12 +143,12 @@ export default function AppointmentsPage() {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-[1600px] items-center gap-14 px-6 py-16 lg:grid-cols-12 lg:px-12 lg:py-24">
+      <section className="mx-auto grid max-w-[1600px] items-center gap-14 px-6 sm:px-8 py-12 sm:py-16 lg:grid-cols-12 lg:px-12 lg:py-24">
         <Plate
           src={art.story}
           alt={art.storyAlt}
           sizes="(min-width: 1024px) 30vw, 100vw"
-          className="aspect-4/5 lg:col-span-4"
+          className="lift aspect-4/5 lg:col-span-4"
         />
         <div className="lg:col-span-7 lg:col-start-6">
           <h2 className="label text-muted">For clients abroad</h2>

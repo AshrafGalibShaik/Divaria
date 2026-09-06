@@ -48,7 +48,7 @@ export function SiteHeader() {
           : "border-b border-line bg-ivory/95 text-ink backdrop-blur-sm"
       }`}
     >
-      <div className="mx-auto flex h-20 max-w-[1600px] items-center justify-between px-6 lg:px-12">
+      <div className="mx-auto flex h-20 max-w-[1600px] items-center justify-between px-6 sm:px-8 lg:px-12">
         <button
           type="button"
           aria-label={open ? "Close menu" : "Open menu"}
@@ -117,7 +117,7 @@ export function SiteHeader() {
       >
         <div className="min-h-0">
           <nav className="max-h-[calc(100svh-5rem)] overflow-y-auto border-t border-line">
-            <div className="mx-auto max-w-[1600px] px-6 py-10 lg:px-12 lg:py-14">
+            <div className="mx-auto max-w-[1600px] px-6 sm:px-8 py-10 lg:px-12 lg:py-14">
               <p className="label text-muted">The house</p>
 
               <ul className="mt-8">

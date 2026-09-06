@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: `%s | ${site.name}`,
   },
   description:
-    "Divaria by Dimple. Bridal couture, pret and Indo-Western menswear, made to order in Guntur and shipped worldwide. Consultations with the founder, in person or on video.",
+    "Divaria by Dimple. Bridal couture, pret, menswear and family edits, made to order in Guntur and shipped worldwide. Consultations with the founder, in person or on video.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
