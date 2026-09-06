@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useLenis } from "lenis/react";
 import { useEffect, useState } from "react";
 import { Wordmark } from "./wordmark";
 import { collections } from "../lib/content";
@@ -13,6 +14,7 @@ const links = [
 
 export function SiteHeader() {
   const pathname = usePathname();
+  const lenis = useLenis();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -50,7 +52,18 @@ export function SiteHeader() {
           <span className="hidden sm:inline">{open ? "Close" : "Menu"}</span>
         </button>
 
-        <Link href="/" aria-label="Label Divaria home" onClick={() => setOpen(false)}>
+        <Link
+          href="/"
+          aria-label="Label Divaria, back to the top"
+          onClick={(e) => {
+            setOpen(false);
+            // Already home: scroll up instead of re-navigating to the same route.
+            if (pathname === "/") {
+              e.preventDefault();
+              lenis?.scrollTo(0);
+            }
+          }}
+        >
           <Wordmark className="w-36 sm:w-48" invert={overHero} />
         </Link>
 
